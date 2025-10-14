@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attila Horvat | Portfolio</title>
+
+  <!-- Link main stylesheet -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Import Google Font (Inter) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- ===== Skip to Content (Keyboard Accessibility) ===== -->
+  <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+  <!-- ===== Header / Navigation ===== -->
+  <header class="header" role="banner">
+    <div class="container">
+      <!-- Logo -->
+      <a href="index.html" class="logo" aria-label="Go to home page" title="Home">Attila Horvat</a>
+
+      <!-- Mobile navigation toggle button -->
+      <!-- aria-controls connects button with #navMenu for accessibility -->
+      <button
+        id="navToggle"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="navMenu"
+        aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main navigation links -->
+      <nav class="nav" id="navMenu" aria-label="Main navigation">
+        <ul>
+          <!-- Active page (Home) -->
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <div class="page-wrapper">
+    <!-- Hero section holds spotlight and intro text -->
+    <main   class="hero" aria-label="Introduction section featuring Attila Horvat's profile and title">
+      <!-- Background glow for top-left light effect -->
+      <div class="top-left-glow" aria-hidden="true"></div>
+
+      <div class="container">
+        <!-- Profile picture above name -->
+        <div class="profile-pic fade-in">
+          <img src="img/prof/profile-pic.jpg" alt="Profile picture of Attila Horvat">
+        </div>
+
+        <!-- Main headline -->
+        <h1 class="hero-title fade-in">Attila <span>Horvat</span></h1>
+        <!-- Subtitle / profession -->
+        <h2 class="hero-subtitle fade-in">Front-End Developer</h2>
+      </div>
+    </main>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Social icons section -->
+      <div class="socials">
+        <a href="https://x.com/AttilaHorvatNB" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/Attila-Horvat" target="_blank" rel="noopener noreferrer"aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://github.com/Attila-Horvat" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+      </div>
+      <!-- Copyright text -->
+      <p>© 2025 Attila Horvat</p>
+    </div>
+  </footer>
+
+  <!-- ===== Scripts ===== -->
+  <!-- Loads JS for navigation + animations -->
+  <script src="js/main.js"></script>
+</body>
+</html>

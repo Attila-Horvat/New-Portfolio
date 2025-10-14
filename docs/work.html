@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work | Attila Horvat</title>
+
+  <!-- Link to main CSS -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Import Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- ===== Skip to Content (Keyboard Accessibility) ===== -->
+  <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+  <!-- ===== Header ===== -->
+  <header class="header" role="banner">
+    <div class="container">
+      <!-- Logo -->
+      <a href="index.html" class="logo" aria-label="Go to home page" title="Home">Attila Horvat</a>
+
+      <!-- Mobile menu toggle -->
+      <!-- aria-controls ties to #navMenu for accessibility -->
+      <button
+        id="navToggle"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="navMenu"
+        aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Navigation links -->
+      <nav class="nav" id="navMenu" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <!-- Current active page -->
+          <li><a href="work.html" class="active" aria-current="page">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Work Section ===== -->
+  <div class="page-wrapper">
+    <!-- Main section showing projects -->
+    <main class="work-hero" aria-label="Portfolio projects">
+      <!-- Decorative spotlight glow (bottom-left) -->
+      <div class="bottom-left-glow" aria-hidden="true"></div>
+
+      <!-- Content container -->
+      <div class="container">
+        <!-- Section title -->
+        <h1 class="hero-title fade-in">My <span>Projects</span></h1>
+
+        <!-- Grid of project cards -->
+        <div class="grid fade-in">
+          <!-- Project 1 -->
+          <a href="https://attila-horvat.github.io/Fruits-website.github.io/" target="_blank" rel="noopener noreferrer" class="card" aria-label="View Fruits Website project (opens in new tab)">
+            <img src="img/projects/web-1.jpg" alt="Screenshot of Fruits Website project" />
+            <h3>Fruits Website</h3>
+          </a>
+
+          <!-- Project 2 -->
+          <a href="https://attila-horvat.github.io/Travel-website-clone.github.io/" target="_blank" rel="noopener noreferrer" class="card" aria-label="View Travel Website project (opens in new tab)">
+            <img src="img/projects/web-2.jpg" alt="Screenshot of Travel Website project" />
+            <h3>Travel Website</h3>
+          </a>
+
+          <!-- Project 3 -->
+          <a href="https://attila-horvat.github.io/Real-state.github.io/" target="_blank" rel="noopener noreferrer" class="card" aria-label="View Real Estate Website project (opens in new tab)">
+            <img src="img/projects/web-3.jpg" alt="Screenshot of Real Estate project" />
+            <h3>Real Estate</h3>
+          </a>
+
+          <!-- Project 4 -->
+          <a href="https://attila-horvat.github.io/Hulu-clone.github.io/" target="_blank" rel="noopener noreferrer" class="card" aria-label="View Hulu Clone Website project (opens in new tab)">
+            <img src="img/projects/web-4.jpg" alt="Screenshot of Hulu Clone project" />
+            <h3>Hulu Clone</h3>
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Social icons section -->
+      <div class="socials">
+        <a href="https://x.com/AttilaHorvatNB" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/Attila-Horvat" target="_blank" rel="noopener noreferrer"aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://github.com/Attila-Horvat" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+      </div>
+      <!-- Copyright text -->
+      <p>© 2025 Attila Horvat</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for navigation + animations -->
+  <script src="js/main.js"></script>
+</body>
+</html>

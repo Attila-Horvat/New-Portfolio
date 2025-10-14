@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Attila Horvat</title>
+
+  <!-- Link to main stylesheet -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Import Inter font family from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- ===== Skip to Content (Keyboard Accessibility) ===== -->
+  <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+  
+  <!-- ===== Header ===== -->
+  <header class="header" role="banner">
+    <div class="container">
+      <!-- Logo -->
+      <a href="index.html" class="logo" aria-label="Go to home page" title="Home">Attila Horvat</a>
+
+      <!-- Mobile menu toggle -->
+      <!-- aria-controls links to #navMenu for accessibility -->
+      <button
+        id="navToggle"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="navMenu"
+        aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Navigation menu -->
+      <nav class="nav" id="navMenu" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <!-- Current page highlighted -->
+          <li><a href="about.html" class="active" aria-current="page">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="about-hero" ria-label="About section introduction">
+    <!-- Subtle right-top glow for visual accent -->
+    <div class="top-right-glow" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <!-- Title -->
+      <h1 class="hero-title fade-in">About <span>Me</span></h1>
+
+      <!-- Intro paragraph about skills and background -->
+      <p class="fade-in">
+        I’m a <strong>Front-End Developer</strong> passionate about crafting accessible, responsive,
+        and visually engaging user experiences. With certifications in <strong>AWS Cloud Practitioner</strong>
+        and <strong>Microsoft Azure Fundamentals</strong>, I combine design sensitivity with a strong
+        technical foundation in HTML, CSS, JavaScript, and React.
+      </p>
+
+      <!-- Personal / professional summary -->
+      <p class="fade-in">
+        Recognized as a proactive, detail-oriented, and fast learner, I enjoy solving problems,
+        collaborating in teams, and continuously improving my technical and creative skills.
+        I’m eager to join a company that values innovation, learning, and inclusion.
+      </p>
+      <a href="assets/Attila-Horvat-Front-End-Developer.pdf"
+        download
+        class="btn-cv fade-in"
+        aria-label="Download Attila Horvat's CV as PDF">
+     📄 Download CV
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== Knowledge & Skills Section ===== -->
+  <section class="about-section fade-in" aria-label="Knowledge and skills list">
+    <div class="container">
+      <!-- Skillset card with categorized skills -->
+      <div class="skills-card">
+        <h2 class="section-title">Knowledge & Skills</h2>
+        <ul class="skills-list">
+          <li><strong>Languages & Frameworks:</strong> HTML, CSS, Tailwind CSS, JavaScript, TypeScript, React, PHP, SQL, Node.js</li>
+          <li><strong>Development Tools:</strong> Git, GitHub, Command Line</li>
+          <li><strong>Core Expertise:</strong> Web design and formatting, responsive layouts, IFrames, meta and link tags, CSS animations and transitions, accessibility optimization</li>
+          <li><strong>Professional Skills:</strong> Functional programming, analytical and critical thinking, time management, problem-solving, collaboration</li>
+          <li><strong>Cloud Certifications:</strong> AWS Certified Cloud Practitioner | Microsoft Certified: Azure Fundamentals</li>
+          <li><strong>Languages Spoken:</strong> English, Serbian, Hungarian</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Social links -->
+      <div class="socials">
+        <a href="https://x.com/AttilaHorvatNB" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/Attila-Horvat" target="_blank" rel="noopener noreferrer"aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://github.com/Attila-Horvat" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+      </div>
+      <!-- Copyright notice -->
+      <p>© 2025 Attila Horvat</p>
+    </div>
+  </footer>
+  <!-- JavaScript for nav toggle + animations -->
+  <script src="js/main.js"></script>
+</body>
+</html>
