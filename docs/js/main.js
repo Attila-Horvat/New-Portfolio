@@ -57,6 +57,7 @@ window.addEventListener("load", () => {
   document.body.appendChild(hiddenScript);
 });
 
+// --- Scroll Detection ---
 let scrolling;
 window.addEventListener('scroll', () => {
   document.body.classList.add('scrolling');
@@ -64,4 +65,37 @@ window.addEventListener('scroll', () => {
   scrolling = setTimeout(() => {
     document.body.classList.remove('scrolling');
   }, 250);
+});
+
+// --- Contact Form (Formspree Integration) ---
+const form = document.getElementById('contactForm');
+const messageStatus = document.getElementById('form-status');
+
+// Listen for form submission
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  // Collect form data into a FormData object
+  const data = new FormData(form);
+
+  try {
+    // Send the data to Formspree
+    const res = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    // Handle success and error responses
+    if (res.ok) {
+      messageStatus.textContent = "✅ Message sent successfully!";
+      messageStatus.style.color = "#4ea8de";
+      form.reset();
+    } else {
+      messageStatus.textContent = "❌ Oops! Something went wrong. Please try again.";
+      messageStatus.style.color = "#ff6b6b";
+    }
+  } catch (error) {
+    messageStatus.textContent = "⚠️ Network error. Please try again later.";
+    messageStatus.style.color = "#ff6b6b";
+  }
 });
